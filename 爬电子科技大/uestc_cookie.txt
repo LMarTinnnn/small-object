@@ -1,0 +1,11 @@
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+.uestc.edu.cn	TRUE	/	FALSE		iPlanetDirectoryPro	AQIC5wM2LY4SfcxnWpqObO6j%2F4vyFOXfJECgTGVZYXhM2t4%3D%40AAJTSQACMDE%3D%23
+idas.uestc.edu.cn	FALSE	/	FALSE		JSESSIONID_ids1	0001o7Y0ibQ7czKz3FerZwPOD_d:-D8J7N
+idas.uestc.edu.cn	FALSE	/authserver	FALSE		route	3b432386b71e29c2457eaf7073b54875
+idas.uestc.edu.cn	FALSE	/authserver/	FALSE		CASTGC	TGT-4836-3aihPkGPOViD46115W56QldiiVoywftDSAc7vibUouem6re3in1479931003778-c3Ya-cas
+portal.uestc.edu.cn	FALSE	/	FALSE		JSESSIONID	0000xouTAoZjwPZy_byMqCZUvBJ:19sdu3g1i
+portal.uestc.edu.cn	FALSE	/	FALSE		MOD_AUTH_CAS	MOD_AUTH_ST-61667-kbQsqFygUlG4fUr7Pe6c1479931003884-zATy-cas
+portal.uestc.edu.cn	FALSE	/	FALSE		route	bd484519ebc8081db0dadf641f700565

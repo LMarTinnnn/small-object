@@ -33,7 +33,6 @@ class RosiMm(object):
         for img_url in data:
             print('%s 正在努力加载 rosi-%s img-%s ' % (threading.current_thread().name, id_num, i))
             with open(os.path.join('rosi-%s' % id_num, str(i)) + '.jpg', 'wb') as file:
-
                 file.write(request.urlopen(img_url).read())
             i += 1
 
@@ -57,5 +56,5 @@ def _atexit():
 
 if __name__ == '__main__':
     r = RosiMm()
-    r.get_many(1311, 1500)
+    r.get_many(1311, 1400)
 
