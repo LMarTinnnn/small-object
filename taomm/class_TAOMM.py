@@ -1,8 +1,9 @@
 from urllib import parse, request
-from _re_ import get_data
+from _re_ import get_data, _re_private_domain
 import os
 import threading
-
+headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 '
+                        '(KHTML, like Gecko) Chrome/54.0.2840.98 Safari/537.36'}
 
 class TaoMM(object):
     def __init__(self):
@@ -11,7 +12,8 @@ class TaoMM(object):
 
     def get_page(self, page_index):
         page_url = 'http://mm.taobao.com/json/request_top_list.htm' + '?page=' + str(page_index)
-        page = request.urlopen(page_url).read().decode('GBK')
+        req = request.Request(page_url, headers=headers)
+        page = request.urlopen(req).read().decode('GBK')
         return page
 
     def get_data(self, page_html):
@@ -65,6 +67,12 @@ class TaoMM(object):
         page = self. get_page(page_index)
         data_page = self.get_data(page)
         for data in data_page:
+            print(data)
+            req = request.Request(data[1] + '&is_coment=false', headers=headers)
+            gr_page = request.urlopen(req).read().decode('GBK')
+            print(gr_page)
+            #domain = _re_private_domain.findall(gr_page)
+            #print(domain)
             t = threading.Thread(target=self.save, args=(data,))
             self.threads.append(t)
             t.start()
@@ -79,4 +87,4 @@ class TaoMM(object):
 
 if __name__ == '__main__':
     spider = TaoMM()
-    spider.get_pages(1, 3)
+    spider.get_pages(1, 1)

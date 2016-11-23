@@ -27,7 +27,7 @@ post_data = {
 }
 
 
-
+# make cookiejar
 filename = 'uestc_cookie.txt'
 cookie = cookiejar.MozillaCookieJar(filename)
 handler = request.HTTPCookieProcessor(cookie)
