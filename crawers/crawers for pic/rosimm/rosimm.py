@@ -56,5 +56,5 @@ def _atexit():
 
 if __name__ == '__main__':
     r = RosiMm()
-    r.get_many(1311, 1400)
+    r.get_many(1000, 1300)
 

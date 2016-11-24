@@ -1,4 +1,4 @@
-from urllib import parse, request
+from urllib import request
 import re
 import os
 import threading
@@ -11,9 +11,10 @@ _re_img = re.compile(r'<img src=\'(.*?.jpg)\' alt.*?>')
 _re_page_num = re.compile(r'共(\d*)页')
 _re_page_name = re.compile('<h1 class="yh">(.*?)</h1>')
 
+
 class Rosi8(object):
     def __init__(self):
-        self.url = 'http://www.rosi8.cc/DISIxiezhen/'
+        self.url = 'http://www.rosi8.cc/AISS/'
         self.base_url = 'http://www.rosi8.cc'
 
     def make_url(self, page):
@@ -97,4 +98,4 @@ def _atexit():
 
 if __name__ == '__main__':
     R = Rosi8()
-    R.run(31, 39)
+    R.run(51, 53)

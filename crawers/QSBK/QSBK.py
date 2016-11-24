@@ -70,7 +70,7 @@ class QSBK(object):
         load_thread = threading.Thread(target=self.load_article)
         load_thread.start()
         print('----------please wait a moment----------')
-        time.sleep(2)
+        time.sleep(3)
         while not self.End:
             self.output()
 
