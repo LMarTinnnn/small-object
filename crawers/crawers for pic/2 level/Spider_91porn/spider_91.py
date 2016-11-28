@@ -104,7 +104,7 @@ class Spider91(object):
                 while True:
                     while True:
                         # 91porn 有个傻逼的机制 多次访问之后 会给你跳到别的页面去 多刷新几次就好了
-                        # 擦。。。。 原来还会封ip！！！！
+                        # 擦。。。。 还会封ip！！！！
                         r = requests.get(img_url, allow_redirects=False, proxies=self.proxies)
                         # print(r.url)
                         if r.url == img_url:
