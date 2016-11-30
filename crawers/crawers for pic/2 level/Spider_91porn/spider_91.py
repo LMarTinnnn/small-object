@@ -87,6 +87,7 @@ class Spider91(object):
             print("已经爬过 %s" % page_title)
             return False
         else:
+
             print('创建 %s' % page_title)
             os.mkdir('%s' % page_title)
             return True

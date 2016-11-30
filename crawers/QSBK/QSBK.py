@@ -2,7 +2,7 @@ from urllib import request
 import re
 import threading
 import time
-import sys
+from queue import Queue
 
 
 class QSBK(object):
@@ -12,7 +12,7 @@ class QSBK(object):
         # initiate headers
         self.headers = {'User-Agent': 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'}
         # store articles
-        self.articles = []
+        self.articles = Queue()
         self.End = False
 
     def create_url(self):
@@ -42,19 +42,21 @@ class QSBK(object):
         while True:
             if self.End:
                 break
-            if len(self.articles) < 2:
+            if self.articles.qsize() < 2:
                 # load 5 pages each time
                 for i in range(5):
-                    self.articles.append(self.get_data(self.create_url()))
+                    self.articles.put(self.get_data(self.create_url()))
             time.sleep(60)
 
     def get_one_page(self):
-        one_page = self.articles.pop(0)
+        one_page = self.articles.get()
         return one_page
 
     def output(self):
         page = self.get_one_page()
         while True:
+            if len(page) == 0:
+                break
             author, content, comment = page.pop(0)
             article = '\n作者：{}  赞:{}\n{}\n'.format(author, comment, content.replace('<br/>', '\n'))
             print(article)
@@ -63,14 +65,12 @@ class QSBK(object):
             if check == 'Q':
                 self.End = True
                 break
-            if len(page) == 0:
-                break
 
     def run(self):
         load_thread = threading.Thread(target=self.load_article)
         load_thread.start()
         print('----------please wait a moment----------')
-        time.sleep(3)
+        # time.sleep(5)
         while not self.End:
             self.output()
 
