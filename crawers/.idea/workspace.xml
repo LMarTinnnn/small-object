@@ -32,10 +32,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/天气预报/Weather_Forcast.py" />
-        <option value="$PROJECT_DIR$/crawers for pic/2 level/Spider_91porn/spider_91.py" />
         <option value="$PROJECT_DIR$/QSBK/QSBK.py" />
         <option value="$PROJECT_DIR$/../../python core programming /chapter 4/4-11/event.py" />
         <option value="$PROJECT_DIR$/joke/joke.py" />
+        <option value="$PROJECT_DIR$/crawers for pic/2 level/Spider_91porn/spider_91.py" />
       </list>
     </option>
   </component>
@@ -112,7 +112,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../python core programming /chapter 4/4-11/event.py" />
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="Python.joke">
+  <component name="RunManager" selected="Python.spider_91">
     <configuration default="false" name="Weather_Forcast" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -160,6 +160,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="crawers" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/joke/joke.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="spider_91" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/crawers for pic/2 level/Spider_91porn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="crawers" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crawers for pic/2 level/Spider_91porn/spider_91.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -298,16 +315,18 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.Weather_Forcast" />
       <item index="1" class="java.lang.String" itemvalue="Python.QSBK" />
       <item index="2" class="java.lang.String" itemvalue="Python.joke" />
+      <item index="3" class="java.lang.String" itemvalue="Python.spider_91" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.joke" />
-        <item index="1" class="java.lang.String" itemvalue="Python.QSBK" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Weather_Forcast" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.spider_91" />
+        <item index="1" class="java.lang.String" itemvalue="Python.joke" />
+        <item index="2" class="java.lang.String" itemvalue="Python.QSBK" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Weather_Forcast" />
       </list>
     </recent_temporary>
   </component>
@@ -405,7 +424,7 @@
         <state relative-caret-position="20">
           <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
           <folding>
-            <element signature="e#48#63#0" expanded="true" />
+            <element signature="e#48#63#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -426,21 +445,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crawers for pic/2 level/Spider_91porn/spider_91.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crawers for pic/1 level/xiuMM/xiuMM.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1481">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawers for pic/2 level/Spider_91porn/spider_91.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

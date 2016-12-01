@@ -161,8 +161,8 @@ class Spider91(object):
 
 
 if __name__ == '__main__':
-    goal = 800
-    now = 100
+    goal = 5
+    now = 1
 
     s = Spider91()
     while now < goal:
