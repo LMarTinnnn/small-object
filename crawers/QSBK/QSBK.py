@@ -60,7 +60,6 @@ class QSBK(object):
             author, content, comment = page.pop(0)
             article = '\n作者：{}  赞:{}\n{}\n'.format(author, comment, content.replace('<br/>', '\n'))
             print(article)
-            print(self.articles.qsize())
             check = input("[Q]for quit, 回车继续阅读:")
             if check == 'Q':
                 self.End = True

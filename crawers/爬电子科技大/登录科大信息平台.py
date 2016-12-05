@@ -15,6 +15,7 @@ headers = {
     # 'Origin': 'http://idas.uestc.edu.cn',
     # 'Referer': 'http://idas.uestc.edu.cn/authserver/login',
 }
+
 post_data = {
     # 这几个都是必须的
     'username': '',
